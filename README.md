@@ -8,8 +8,9 @@ This private docker registry has two parts: proxy (for ssl termination) and regi
 
 ## Setup Steps
 
-1) Fill in the storage environment variables in docker-compose.yml
-2) `docker-compose build --build-arg username=<USERNAME> --build-arg password=<PASSWORD> registry`
-3) `docker-compose up -d`
-4) Docker into the proxy container: `docker exec -it <PROXY-CONTAINER-ID> /bin/bash`
-5) In the proxy container, run `cd /src && chmod +x get-ssl-cert.sh && ./get-ssl-cert.sh`
+1) Change the storage environment variables in docker-compose.yml
+2) Change <DOMAIN-NAME> in all script files under `/src` folder to your own domain name
+3) `docker-compose build --build-arg username=<USERNAME> --build-arg password=<PASSWORD> registry`
+4) `docker-compose up -d`
+5) Docker into the proxy container: `docker exec -it <YOUR-PROXY-CONTAINER-ID> /bin/bash`
+6) In the proxy container, run `cd /src && chmod +x get-ssl-cert.sh && ./get-ssl-cert.sh`

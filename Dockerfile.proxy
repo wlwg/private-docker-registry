@@ -1,0 +1,14 @@
+FROM nginx
+
+RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list
+RUN apt-get update \
+    && apt-get install --no-install-recommends --no-install-suggests -y \
+		cron certbot -t jessie-backports
+
+ADD src /src
+
+RUN cp /src/renew-ssl-cert.sh /etc/cron.daily/renew-ssl-cert.sh
+
+RUN rm /etc/nginx/conf.d/default.conf
+RUN cp /src/letsencrypt.conf /etc/nginx/conf.d/letsencrypt.conf
+

@@ -1,0 +1,7 @@
+FROM registry:2
+
+ARG username
+ARG password
+
+RUN mkdir /auth
+RUN htpasswd -Bbn $username $password > auth/htpasswd

@@ -1,6 +1,4 @@
-# docker-registry
-
-This repository shows how to manually set up a private docker registry.
+# How To Manually Set Up A Private Docker Registry
 
 ## Description
 

@@ -1,4 +1,4 @@
-# Manually Set Up A Private Docker Registry
+# Use Docker to Set Up A Private Docker Registry
 
 ## Description
 

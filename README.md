@@ -21,4 +21,4 @@ chmod +x get-ssl-cert.sh
 ```
 Wait for one or two minutes, the ssl cert should be configured correctly.
 
-7) Now from any other machine having docker installed, run `docker login <YOUR-DOMAIN-NAME>`. Now it will ask for your username and password used in step 3). After that you should be able to log into your registry.
+7) Now from any other machine having docker installed, run `docker login <YOUR-DOMAIN-NAME>`. Now it will ask for your username and password used in step 3. After that you should be able to log into your registry.

@@ -2,7 +2,7 @@
 
 ## Description
 
-This private docker registry has two parts: proxy (for ssl termination) and registry (docker registry api server that handles client `push` and `pull`).  More storage config can be found at https://github.com/docker/docker-registry#storage-options.
+This private docker registry has two parts: proxy (for ssl termination) and registry (docker registry api server that handles client `push` and `pull`). 
 
 ## Setup Steps
 

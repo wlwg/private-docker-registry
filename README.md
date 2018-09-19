@@ -6,7 +6,7 @@ This private docker registry has two parts: proxy (for ssl termination) and regi
 
 ## Setup Steps
 
-Pre-step: Buy a domain name from a domain provider and set up an A record pointing to the IP of the machine where you are deploying the registry. Note that the IP should be public. After that, follow the steps below.
+Pre-step: Buy a domain name from a domain provider and set up an A record pointing to the IP of the machine where you are deploying the registry. Note that the IP should be publicly accessible. After that, follow the steps below.
 
 1) Change the cloud storage environment variables in docker-compose.yml. The current setup uses aliyun OSS as an example for image storage. Note that different providers would need different environment variables. Please reference https://github.com/docker/docker-registry#storage-options for more details. 
 2) Change <DOMAIN-NAME> in all script files under `/src` folder to your own domain name.
